@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int x, y,i, result = 1;
+    printf("Enter x value: ");
+    scanf("%d", &x);
+    printf("Enter y value: ");
+    scanf("%d", &y);
+    for (i = 0; i < y; ++i) 
+	{
+        result *= x;
+    }
+    printf("Your Answer: %d\n", result);
+    return 0;
+}
