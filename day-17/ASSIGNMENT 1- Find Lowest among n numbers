@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+   int n, i, lowest;
+   
+   
+   printf("Enter the number of inputs: ");
+   scanf("%d", &n);
+
+   printf("Enter number 1: ");
+   scanf("%d", &lowest);
+
+   for (i = 2; i <= n; i++) {
+      int num;
+      printf("Enter number %d: ", i);
+      scanf("%d", &num);
+      
+      if (num < lowest) {
+         lowest = num;
+      }
+   }
+   printf("Lowest is %d\n", lowest);
+   return 0;
+}
