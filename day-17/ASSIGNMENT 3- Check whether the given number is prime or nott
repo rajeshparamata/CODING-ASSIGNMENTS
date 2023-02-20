@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int num,i;
+	int flag=2;
+	printf("Enter a number:");
+	scanf("%d",&num);
+	for(i=2;i<num/2;i++)
+	{
+		if(num%i==0)
+		
+		{
+			flag++;
+			break;
+		
+		}
+	}
+	if(flag==2)
+	printf("\n%d is PRIME",num);
+	else
+	printf("\n%d is not a PRIME",num);
+	return 0;
+}
