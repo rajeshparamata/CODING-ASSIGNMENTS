@@ -5,7 +5,7 @@ int main()
 int num,rem,sum,org;
 printf("Enter a number:");
 scanf("%d",&num);
-rev=0;
+sum=0;
 org=num;
 while(num>0)
 {
@@ -13,7 +13,7 @@ rem=num%10;
 sum=sum+pow(rem,3);
 num=num/10;
 }
-if(org==rev)
+if(org==sum)
 printf("\n%d is an Armstrong",org);
 else 
 printf("\n%d is not an Armstrong",org);
