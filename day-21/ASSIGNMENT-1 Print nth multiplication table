@@ -1,0 +1,27 @@
+/*USING WHILE LOOP*/
+#include<stdio.h>
+main()
+{
+int num,i;
+pirntf("Enter a number:");
+scanf("%d",&num)
+i=1;
+while(i<=15)
+{
+printf("\n%d x %d = %d",num,i,num*i);
+i++;
+}
+}
+
+/*USING FOR LOOP*/
+#include<stdio.h>
+main()
+{
+int num,i;
+printf("Enter a number:");
+scanf("%d",&num);
+for(i=1;i<=15;i++)
+{
+printf("\n%d x %d = %d",num,i,num*i);
+}
+}
