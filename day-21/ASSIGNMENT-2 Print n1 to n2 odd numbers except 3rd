@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int n1, n2, count = 0;
+    printf("Enter n1 and n2: ");
+    scanf("%d %d", &n1, &n2);
+    for (int i = n1; i <= n2; i++) {
+        if (i % 2 == 1) {
+            count++;
+            if (count != 3) {
+                printf("%d ", i);
+            }
+        }
+    }
+    return 0;
+}
